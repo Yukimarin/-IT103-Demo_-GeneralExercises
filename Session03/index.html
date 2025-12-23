@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form {
+        width: 420px;
+      }
+      label {
+        display: inline-block;
+        width: 140px;
+        vertical-align: top;
+        margin-bottom: 8px;
+      }
+      input,
+      select,
+      textarea {
+        margin-bottom: 8px;
+      }
+      textarea {
+        width: 240px;
+        height: 80px;
+      }
+      .actions button {
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Thêm mới nhân viên</h3>
+
+    <form>
+      <label>Họ và tên</label>
+      <input type="text" value="Nguyễn Văn Nam" /><br />
+
+      <label>Ngày sinh đầy đủ</label>
+      <input type="date" value="2023-12-07" /><br />
+
+      <label>Tháng và năm</label>
+      <input type="month" value="2023-12" /><br />
+
+      <label>Thời gian</label>
+      <input type="time" value="12:40" /><br />
+
+      <label>Giới tính</label>
+      <input type="radio" name="gender" checked /> Nam
+      <input type="radio" name="gender" /> Nữ
+      <input type="radio" name="gender" /> Khác
+      <br />
+
+      <label>Email</label>
+      <input type="email" value="nam@gmail.com" /><br />
+
+      <label>Mật khẩu</label>
+      <input type="password" value="123456" /><br />
+
+      <label>Giới thiệu bản thân</label>
+      <textarea>Xin đẹp</textarea><br />
+
+      <label>Thành phố</label>
+      <select>
+        <option>Hà Nội</option>
+        <option>TP.HCM</option>
+        <option>Đà Nẵng</option></select
+      ><br />
+
+      <label>Hình ảnh</label>
+      <input type="file" /><br />
+
+      <label>Sở thích</label>
+      <input type="checkbox" checked /> Code
+      <input type="checkbox" checked /> Chơi game <input type="checkbox" /> Bơi
+      lội <input type="checkbox" /> Đá bóng
+      <br />
+
+      <label>Tiến độ hoàn thành công việc</label>
+      <progress value="40" max="100"></progress><br />
+
+      <label>Năm kinh nghiệm</label>
+      <input type="number" value="3" /><br />
+
+      <label>Tìm kiếm</label>
+      <input type="search" value="Nguyen" /><br />
+
+      <label>Màu sắc ưa thích</label>
+      <input type="color" /><br /><br />
+
+      <div class="actions">
+        <button type="reset">Hủy</button>
+        <button type="reset">Làm mới</button>
+        <button type="submit">Gửi</button>
+      </div>
+    </form>
+  </body>
+</html>
