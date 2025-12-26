@@ -74,9 +74,21 @@
     text-align: center;
 }
 
-.icon {
+i {
     font-size: 32px;
     margin-bottom: 8px;
+}
+
+.feature:nth-child(1) i {
+  color: blue;
+}
+
+.feature:nth-child(2) i {
+  color: green;
+}
+
+.feature:nth-child(3) i {
+  color: red;
 }
 
 /* REGISTER */
